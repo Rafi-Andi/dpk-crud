@@ -29,7 +29,7 @@
         <nav class="nav-dashboard">
             <ul>
                 <li><a href="" class="nav active"><i class="fa-solid fa-box"></i> Data Barang</a></li>
-                <li><a href="" class="nav"><i class="fa-solid fa-cart-plus"></i> Tambah Barang</a></li>
+                <li><a href="form.php" class="nav"><i class="fa-solid fa-cart-plus"></i> Tambah Barang</a></li>
             </ul>
         </nav>
 

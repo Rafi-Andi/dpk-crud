@@ -169,3 +169,35 @@ header h2{
 .delete-button:active {
     background-color: #EF4444;
 }
+
+.form {
+    background-color: lightblue;
+}
+
+.container-form {
+    background-color: gray;
+    padding: 20px;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-input input {
+    width: 50%;
+    height: 30px;
+    outline: none;
+    border: none;
+}
+.container-input select {
+    width: 50%;
+    height: 30px;
+    outline: none;
+    border: none;
+}
+.container-input.radio {
+    outline: none;
+    border: none;
+}
+
