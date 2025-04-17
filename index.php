@@ -1,3 +1,11 @@
+<?php 
+include("./config/koneksi.php"); 
+$sql = "SELECT * FROM barang";
+$query =  $conn -> query($sql);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,72 +42,46 @@
         </nav>
 
         <div class="isi-section">
-        <div class="container-table">
-                    <table class="complaint-table">
-                        <thead>
-                            <tr class="table-header">
-                                <th>Kode Barang</th>
-                                <th>Nama Barang</th>
-                                <th>Type Barang</th>
-                                <th>Jumlah Barang</th>
-                                <th>Tanggal</th>
-                                <th>Tindakan</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                                <tr>
-                                    <td class="table-cell">halo </td>
-                                    <td class="table-cell">ba</td>
-                                    <td class="table-cell">ha</td>
-                                    <td class="table-cell">ha</td>
-                                    <td class="table-cell">ha</td>
-                                    <td class="table-cell">
-                                        <div class="action-container">
-                                            <a href="a" id="buttonEdit"
-                                                class="action-button edit-button"><i class="fa-solid fa-pen-to-square"></i></a>
-                                            <a href="" id="buttonDelete"
-                                                onclick=""
-                                                class="action-button delete-button"><i class="fa-solid fa-delete-left"></i></i></a>
-                                        </div>
-                                    </td>
+            <div class="container-table">
+                <?php if($query && $query ->num_rows > 0) :?>
+                        <table class="complaint-table">
+                            <thead>
+                                <tr class="table-header">
+                                    <th>Kode Barang</th>
+                                    <th>Nama Barang</th>
+                                    <th>Type Barang</th>
+                                    <th>Jumlah Barang</th>
+                                    <th>Tanggal</th>
+                                    <th>Tindakan</th>
                                 </tr>
-
-                                <tr>
-                                    <td class="table-cell">halo </td>
-                                    <td class="table-cell">ba</td>
-                                    <td class="table-cell">ha</td>
-                                    <td class="table-cell">ha</td>
-                                    <td class="table-cell">ha</td>
-                                    <td class="table-cell">
-                                        <div class="action-container">
-                                            <a href="a" id="buttonEdit"
-                                                class="action-button edit-button"><i class="fa-solid fa-pen-to-square"></i></a>
-                                            <a href="" id="buttonDelete"
-                                                onclick=""
-                                                class="action-button delete-button"><i class="fa-solid fa-delete-left"></i></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="table-cell">halo </td>
-                                    <td class="table-cell">ba</td>
-                                    <td class="table-cell">ha</td>
-                                    <td class="table-cell">ha</td>
-                                    <td class="table-cell">ha</td>
-                                    <td class="table-cell">
-                                        <div class="action-container">
-                                            <a href="a" id="buttonEdit"
-                                                class="action-button edit-button"><i class="fa-solid fa-pen-to-square"></i></a>
-                                            <a href="" id="buttonDelete"
-                                                onclick=""
-                                                class="action-button delete-button"><i class="fa-solid fa-delete-left"></i></i></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                <?php while($row = $query ->fetch_assoc()) :?>
+                                    <tr>
+                                        <td class="table-cell"><?= $row['kode_barang'];?> </td>
+                                        <td class="table-cell"><?= $row['nama_barang'];?></td>
+                                        <td class="table-cell"><?= $row['type_barang'];?></td>
+                                        <td class="table-cell"><?= $row['jumlah_barang'];?></td>
+                                        <td class="table-cell"><?= $row['tanggal'];?></td>
+                                        <td class="table-cell">
+                                            <div class="action-container">
+                                                <a href="a" id="buttonEdit"
+                                                    class="action-button edit-button"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                <a href="" id="buttonDelete"
+                                                    onclick=""
+                                                    class="action-button delete-button"><i class="fa-solid fa-delete-left"></i></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                <?php endwhile;?>
+                                
+                                
+                            </tbody>
+                        </table>
             </div>
+            <?php else : ?>
+                <p>Belum ada data</p>
+            <?php endif ?>
         </div>
         </div>
     </div>
