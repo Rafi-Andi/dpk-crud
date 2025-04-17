@@ -22,14 +22,86 @@
 <body>
     <div class="container-dashboard">
         <header class="header-dashboard">
+            <i class="fa-solid fa-truck"></i>
             <h2>MANAJEMEN BARANG</h2>
         </header>
+        <div class="container">
         <nav class="nav-dashboard">
             <ul>
-                <li><a href="">Data Barang</a></li>
-                <li><a href="">Tambah Barang</a></li>
+                <li><a href="" class="nav active"><i class="fa-solid fa-box"></i> Data Barang</a></li>
+                <li><a href="" class="nav"><i class="fa-solid fa-cart-plus"></i> Tambah Barang</a></li>
             </ul>
         </nav>
+
+        <div class="isi-section">
+        <div class="container-table">
+                    <table class="complaint-table">
+                        <thead>
+                            <tr class="table-header">
+                                <th>Kode Barang</th>
+                                <th>Nama Barang</th>
+                                <th>Type Barang</th>
+                                <th>Jumlah Barang</th>
+                                <th>Tanggal</th>
+                                <th>Tindakan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td class="table-cell">halo </td>
+                                    <td class="table-cell">ba</td>
+                                    <td class="table-cell">ha</td>
+                                    <td class="table-cell">ha</td>
+                                    <td class="table-cell">ha</td>
+                                    <td class="table-cell">
+                                        <div class="action-container">
+                                            <a href="a" id="buttonEdit"
+                                                class="action-button edit-button"><i class="fa-solid fa-pen-to-square"></i></a>
+                                            <a href="" id="buttonDelete"
+                                                onclick=""
+                                                class="action-button delete-button"><i class="fa-solid fa-delete-left"></i></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="table-cell">halo </td>
+                                    <td class="table-cell">ba</td>
+                                    <td class="table-cell">ha</td>
+                                    <td class="table-cell">ha</td>
+                                    <td class="table-cell">ha</td>
+                                    <td class="table-cell">
+                                        <div class="action-container">
+                                            <a href="a" id="buttonEdit"
+                                                class="action-button edit-button"><i class="fa-solid fa-pen-to-square"></i></a>
+                                            <a href="" id="buttonDelete"
+                                                onclick=""
+                                                class="action-button delete-button"><i class="fa-solid fa-delete-left"></i></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="table-cell">halo </td>
+                                    <td class="table-cell">ba</td>
+                                    <td class="table-cell">ha</td>
+                                    <td class="table-cell">ha</td>
+                                    <td class="table-cell">ha</td>
+                                    <td class="table-cell">
+                                        <div class="action-container">
+                                            <a href="a" id="buttonEdit"
+                                                class="action-button edit-button"><i class="fa-solid fa-pen-to-square"></i></a>
+                                            <a href="" id="buttonDelete"
+                                                onclick=""
+                                                class="action-button delete-button"><i class="fa-solid fa-delete-left"></i></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+        </div>
     </div>
 </body>
 </html>
