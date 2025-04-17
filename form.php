@@ -52,17 +52,24 @@
                             <label for="jumlah_barang">Jumlah Barang</label>
                             <input type="number" name="jumlah_barang" id="jumlah_barang">
                         </div>
-                        <label>Type Barang</label>
-                        <div class="container-input radio">
-                            <div>
-                                <label>Barang baru</label>
-                                <input type="radio" value="barang_baru" name="type_barang" id="">
-                            </div>
-                            <div>
-                                <label>Barang bekas</label>
-                                <input type="radio" value="barang_bekas" name="type_barang" id="">
+                        <div class="container-input">
+                            <label>Type Barang</label>
+                            <br>
+                            <div class="container-input radio">
+                                <div>
+                                    <label>Barang baru</label>
+                                    <input type="radio" value="barang_baru" name="type_barang" id="">
+                                </div>
+                                <div>
+                                    <label>Barang bekas</label>
+                                    <input type="radio" value="barang_bekas" name="type_barang" id="">
+                                </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="button-submit">
+                        <input type="submit" name="Tambah" value="Tambah" id="">
                     </div>
                 </form>
             </div>

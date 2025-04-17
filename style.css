@@ -256,6 +256,22 @@ header h2{
   .form button:hover {
     background-color: #3a7bca;
   }
+
+  .button-submit{
+    display: flex;
+    justify-content: center;
+}
+
+  .button-submit input{
+    width: 100%;
+    margin-top: 30px;
+    background-color: var(--ketiga);
+    border: none;
+    padding: 8px;
+    color: var(--kedua);
+    font-weight: 600;
+    border-radius: 6px;
+  }
   
 
   @media (max-width: 650px) {
