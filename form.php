@@ -34,7 +34,7 @@
             </nav>
 
             <div class="isi-section">
-                <form action="" class="form">
+                <form action="tambah-barang.php" method="POST" class="form">
                     <h2>Form Barang</h2>
                     <div class="container-form">
                         <div class="container-input">
@@ -60,19 +60,31 @@
                             <div class="container-input radio">
                                 <div>
                                     <label>Barang baru</label>
-                                    <input type="radio" value="barang_baru" name="type_barang" id="">
+                                    <input type="radio" value="Barang Baru" name="type_barang" id="">
                                 </div>
                                 <div>
                                     <label>Barang bekas</label>
-                                    <input type="radio" value="barang_bekas" name="type_barang" id="">
+                                    <input type="radio" value="Barang Bekas" name="type_barang" id="">
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="button-submit">
-                        <input type="submit" name="Tambah" value="Tambah" id="">
+                        <input type="submit" name="tambah" value="Tambah" id="">
                     </div>
+
+                    <?php if(isset($_GET['status'])): ?>
+                        <p>
+                            <?php
+                                if($_GET['status'] == 'sukses'){
+                                    echo "Pendaftaran siswa baru berhasil!";
+                                } else {
+                                    echo "Pendaftaran gagal!";
+                                }
+                            ?>
+                        </p>
+                    <?php endif; ?>
                 </form>
             </div>
         </div>
