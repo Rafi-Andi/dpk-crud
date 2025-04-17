@@ -47,7 +47,7 @@ $query =  $conn -> query($sql);
                         <table class="complaint-table">
                             <thead>
                                 <tr class="table-header">
-                                    <th>Kode Barang</th>
+                                    <th>Kategori Barang</th>
                                     <th>Nama Barang</th>
                                     <th>Type Barang</th>
                                     <th>Jumlah Barang</th>

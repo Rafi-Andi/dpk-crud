@@ -44,9 +44,9 @@
                         <div class="container-input">
                             <label for="kode_barag">Kategori barang</label>
                             <select name="kode_barang" id="kode_barang">
-                                <option value="ELK-">Elektronik</option>
-                                <option value="PRB-">Perabotan</option>
-                                <option value="ATK-">Alat Tulis</option>
+                                <option value="Elektronik">Elektronik</option>
+                                <option value="Perabotan">Perabotan</option>
+                                <option value="Alat Tulis">Alat Tulis</option>
                             </select>
 
                         </div>
