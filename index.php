@@ -65,9 +65,9 @@ $query =  $conn -> query($sql);
                                         <td class="table-cell"><?= $row['tanggal'];?></td>
                                         <td class="table-cell">
                                             <div class="action-container">
-                                                <a href="a" id="buttonEdit"
+                                                <a href="edit.php?id=<?php echo $row['id']; ?>" id="buttonEdit"
                                                     class="action-button edit-button"><i class="fa-solid fa-pen-to-square"></i></a>
-                                                <a href="" id="buttonDelete"
+                                                <a href="hapus.php?id=<?php echo $row['id']; ?>" id="buttonDelete"
                                                     onclick=""
                                                     class="action-button delete-button"><i class="fa-solid fa-delete-left"></i></i></a>
                                             </div>
