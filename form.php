@@ -44,7 +44,7 @@
                             <select name="kode_barang" id="kode_barang">
                                 <option value="ELK-">Elektronik</option>
                                 <option value="PRB-">Perabotan</option>
-                                <option value="ATK-">Alat Tuli</option>
+                                <option value="ATK-">Alat Tulis</option>
                             </select>
 
                         </div>
